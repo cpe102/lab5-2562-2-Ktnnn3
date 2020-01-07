@@ -1,19 +1,21 @@
 #include<iostream>
 using namespace std;
-char mixText(string a,string b){
+string mixText(string a,string b){
 	int L1 = a.size();
 	int L2 = b.size();
 	int i = 0;
-	
+	string y ="";
 	if(L1==L2){
 	while(i < L1){
-		cout<<a[i]<<b[i]; 
+		y += a[i];
+		y += b[i];
 		i++;
+		
 	}
+	return y;
 	} else{
-		return 'E';
+		return "E";
 	}
-	return 0 ;
 }
 
 
