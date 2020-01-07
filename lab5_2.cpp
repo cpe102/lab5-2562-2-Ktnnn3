@@ -1,6 +1,20 @@
 #include<iostream>
 using namespace std;
-
+char mixText(string a,string b){
+	int L1 = a.size();
+	int L2 = b.size();
+	int i = 0;
+	
+	if(L1==L2){
+	while(i < L1){
+		cout<<a[i]<<b[i]; 
+		i++;
+	}
+	} else{
+		return 'E';
+	}
+	return 0 ;
+}
 
 
 
